@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!---option selection page-->
+        <div class="second">
+            <div class="option">
+                <div class="one">
+                    <a href="#" id="deposit">Deposit</a>
+                    <a href="#" id="withdrawal">Withdrawal</a>
+                </div>
+                <div class="two">
+                    <a href="#" id="balance">Balance Check</a>
+                    <a href="#" id="exit">Exit</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            //depositpage
+            let deposit=document.querySelector("#deposit")
+            deposit.addEventListener("click",()=>{
+                window.location.href="depositpage.html"
+            })
+            //withdrawal page
+            let withdraw=document.querySelector("#withdrawal");
+            withdraw.addEventListener("click",()=>{
+                window.location.href="withdrawalpage.html"
+            })
+            //balance page
+            let balance=document.querySelector("#balance");
+            balance.addEventListener("click",()=>{
+                window.location.href="balancecheck.html"
+            })
+
+        </script>
+</body>
+</html>

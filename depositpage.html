@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <!---deposit page-->
+    <div class="thirdpage">
+        <div class="depositpage">
+            <h1 class="dephead">Enter the deposit amount</h1>
+            <input type="text" class="depamount"> <br>
+            <button class="submit1">Submit</button>
+            <p class="showbalance"></p>
+        </div>
+    </div>
+    <script>
+            let current_balance=10000;
+            let submit1=document.querySelector(".submit1")
+            submit1.addEventListener("click",()=>{
+                let depamount=Number(document.querySelector(".depamount").value)
+                current_balance=current_balance+depamount;
+                let  showbalance=document.querySelector(".showbalance").innerHTML="current balance"+current_balance;
+            });
+    </script>
+    
+</body>
+</html>

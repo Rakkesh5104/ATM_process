@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+        <!----withdraw page-->
+        <div class="fourthpage">
+            <div class="withdrawpage">
+                <h1 class="withhead">Enter the withdraw amount</h1>
+                <input type="text" class="withamount"> <br>
+                <button class="submit2">Submit</button>
+                <p class="showbalance1"></p>
+            </div>
+        </div>
+        <script>
+            let current_balance=10000;
+            let submit2=document.querySelector(".submit2");
+            submit2.addEventListener("click",()=>{
+                let withamount=Number(document.querySelector(".withamount").value);
+                current_balance=current_balance-withamount;
+                let showbalance1=document.querySelector(".showbalance1").innerHTML=current_balance;
+            })
+        </script>
+
+</body>
+</html>

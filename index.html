@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!---pin enter page-->
+    <div class="container">
+        <div class="login">
+            <h1 class="enterpin">Enter your PIN</h1>
+            <input type="password" class="pin">
+            <br>
+            <button class="btn">Submit</button>
+            <p class="valid"></p>
+        </div>
+    </div>
+    <script>
+        let btn=document.querySelector("button");
+        const pin=1234;
+        let current_balance=10000;
+        let first=document.querySelector(".container");
+        btn.addEventListener("click",()=>{
+        let inputbox=Number(document.querySelector("input").value)
+            if(pin==inputbox){
+                window.location.href="optionpage.html"
+            }
+            else{
+                document.querySelector(".valid").innerHTML="Pin is incorrect"
+            }
+        }
+        );
+
+
+
+
+
+    </script>
+</body>
+</html>
